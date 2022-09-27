@@ -5,19 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x,y,z,m;
-	int a,b,c;
-	x=1;
-	y=3;
-	z=5;
-	a=3;
-	b=4;
-	c=5;
+	int a,b;
+	int sum,sub,mul,div,rest;
 	
-	y=a*x*x+b*x+c;
-	m=(x+y+z)/3;
+	printf("input two integers : ");
+	scanf("%i%i",&a,&b);
 	
-	printf("y=%d, m=%d",y,m);
+	sum=a+b;
+	sub=a-b;
+	mul=a*b;
+	div=a/b;
+	rest=a%b;
+	
+	printf("+ result is %d\n", sum);
+	printf("- result is %d\n", sub);
+	printf("* result is %d\n", mul);
+	printf("/ result is %d\n", div);
+	printf("%% result is %d\n", rest);
 	
 	return 0;
 }
