@@ -4,17 +4,17 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+	int a,hour,minute,second;
+	printf("input the second : ");
+	scanf("%d",&a);
 	
-	int x;
+	hour=a/3600;
+	minute=(a%3600)/60;
+	second=(a%3600)%60;
 	
-	printf("input the year : ");
-	scanf("%i",&x);
-	
-	if(x%4==0&&x%100!=0||x%400==0)
-		printf("%i is leap year!\n ",x);
-	else
-		printf("%i is not leap year!\n",x);
-	
+	printf("The time for %d second is %d:%d:%d",a,hour,minute,second);
+
+
 	return 0;
 }
 
