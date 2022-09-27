@@ -5,24 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a,b;
-	int sum,sub,mul,div,rest;
+	int input_second,minute,second;
 	
-	printf("input two integers : ");
-	scanf("%i%i",&a,&b);
+	printf("input the second : ");
+	scanf("%d",&input_second);
 	
-	sum=a+b;
-	sub=a-b;
-	mul=a*b;
-	div=a/b;
-	rest=a%b;
+	minute=input_second/60;
+	second=input_second%60;
 	
-	printf("+ result is %d\n", sum);
-	printf("- result is %d\n", sub);
-	printf("* result is %d\n", mul);
-	printf("/ result is %d\n", div);
-	printf("%% result is %d\n", rest);
-	
+	printf("the time is %d : %d\n", minute,second);
+		
 	return 0;
 }
 
